@@ -1,12 +1,13 @@
 === WPJM Extra Fields ===
-Contributors: Gabriel Maldonado
+
+Contributors: gma992
 Tags: job manager, job listing, job board, job management, job lists, job list, job, jobs, company, hiring, employment, employer, employees, candidate, freelance, internship, job listings, positions, board, application, hiring, listing, manager, recruiting, recruitment, talent
 Tested up to: 4.9
 License: GPLv2+
 
 == Description ==
 
-Adds an extra Salary and Important Information fields to WP Job Manager plugin. both in the front-end for Job Submissions as well as in the back end for Job Listing management
+Adds Salary and Important Information extra fields to WP Job Manager plugin. Both in the front-end for Job Submissions as well as in the back end for Job Listing management.
 
 == Intallation and Setup ==
 
@@ -16,10 +17,14 @@ No further setup is required, just install and activate the plugin under Plugins
 
 = Documentation =
 
-- GitHub Repository:
+- GitHub Repository: https://github.com/iamgabrielma/WPJM-Extra-Fields
 - Documentation: https://tilcode.blog/wpjm-extra-fields-adds-extra-fields-to-wp-job-manager-job-listings
 
 == Changelog ==
 
 = 1.0.0 =
 * Hello World
+
+= 1.0.1 =
+* Fix: Add contributor to readme.txt
+* Fix: Update readme.md with proper markdown
