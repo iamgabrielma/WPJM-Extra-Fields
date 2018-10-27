@@ -2,7 +2,7 @@
 
 Contributors: gma992
 Tags: job manager, job listing, job board, job management, job lists, job list, job, jobs, company, hiring, employment, employer, employees, candidate, freelance, internship, job listings, positions, board, application, hiring, listing, manager, recruiting, recruitment, talent
-Tested up to: 4.9
+Tested up to: 5.0
 License: GPLv2+
 
 == Description ==
@@ -26,5 +26,6 @@ No further setup is required, just install and activate the plugin under Plugins
 * Hello World
 
 = 1.0.1 =
+* Tested up to WordPress 5.0
 * Fix: Add contributor to readme.txt
 * Fix: Update readme.md with proper markdown

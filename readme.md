@@ -18,5 +18,6 @@ Documentation can be found here: https://tilcode.blog/wpjm-extra-fields-adds-ext
 - Hello World
 
 == 1.0.1 ==
+- Tested up to WordPress 5.0
 - Fix: Add contributor to readme.txt
 - Fix: Update readme.md with proper markdown
