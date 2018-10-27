@@ -25,15 +25,28 @@ if ( !class_exists( 'WP_Job_Manager' ) ) {
 
 } else {
 
-	add_filter( 'submit_job_form_fields', 'gma_wpjmef_frontend_add_salary_field');
-  add_filter( 'submit_job_form_fields', 'gma_wpjmef_frontend_add_important_info_field');
+    add_action( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'gma_wpjmef_add_support_link_to_plugin_page' );
 
-  add_filter( 'job_manager_job_listing_data_fields', 'gma_wpjmef_admin_add_salary_field' );
-  add_filter( 'job_manager_job_listing_data_fields', 'gma_wpjmef_admin_add_important_info_field' );
+	add_filter( 'submit_job_form_fields', 'gma_wpjmef_frontend_add_salary_field');
+    add_filter( 'submit_job_form_fields', 'gma_wpjmef_frontend_add_important_info_field');
+
+    add_filter( 'job_manager_job_listing_data_fields', 'gma_wpjmef_admin_add_salary_field' );
+    add_filter( 'job_manager_job_listing_data_fields', 'gma_wpjmef_admin_add_important_info_field' );
 
 	add_action( 'single_job_listing_meta_end', 'gma_wpjmef_display_job_salary_data' );
-  add_action( 'single_job_listing_meta_end', 'gma_wpjmef_display_important_info_data' );
+    add_action( 'single_job_listing_meta_end', 'gma_wpjmef_display_important_info_data' );
 
+}
+
+/**
+* Adds a direct support link under the Plugins Page once the plugin is activated
+**/
+function gma_wpjmef_add_support_link_to_plugin_page( $links ){
+
+    $links = array_merge( array(
+        '<a href="https://wordpress.org/support/plugin/wpjm-extra-fields" target="_blank">' . __( 'Support', 'wpjm-extra-fields' ) . '</a>'
+    ), $links );
+    return $links;
 }
 
 /**

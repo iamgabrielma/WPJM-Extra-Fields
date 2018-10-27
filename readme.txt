@@ -29,3 +29,4 @@ No further setup is required, just install and activate the plugin under Plugins
 * Tested up to WordPress 5.0
 * Fix: Add contributor to readme.txt
 * Fix: Update readme.md with proper markdown
+* Enhancement: Added a direct link to the support forums within the Plugins page
