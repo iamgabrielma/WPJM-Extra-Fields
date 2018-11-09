@@ -128,7 +128,7 @@ function gma_wpjmef_display_job_salary_data() {
   $important_info = get_post_meta( $post->ID, '_job_important_info', true );
 
   if ( $salary ) {
-    echo '<li>' . __( 'Salary: ' ) . esc_html( $salary ) . '</li>';
+    echo '<li class="salary">' . __( '<strong>Salary:</strong> ' ) . esc_html( $salary ) . '</li>';
   }
 
 }
@@ -143,7 +143,7 @@ function gma_wpjmef_display_important_info_data() {
   $important_info = get_post_meta( $post->ID, '_job_important_info', true );
 
   if ( $important_info ) {
-    echo '<li>' . esc_html( $important_info ) . '</li>';
+    echo '<li class="important-info">' . esc_html( $important_info ) . '</li>';
   }
 
 }
