@@ -3,7 +3,7 @@
  * Plugin Name: WPJM Extra Fields
  * Plugin URI: https://tilcode.blog/wpjm-extra-fields-adds-extra-fields-to-wp-job-manager-job-listings
  * Description: Adds an extra Salary and Important Information fields to WP Job Manager job listings
- * Version: 1.0.0
+ * Version: 1.2.0
  * Author: Gabriel Maldonado
  * Author URI: http://tilcode.blog/
  * Text Domain: wpjm-extra-fields
@@ -19,24 +19,17 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit; 
 }
 
-if ( !class_exists( 'WP_Job_Manager' ) ) {
+add_action( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'gma_wpjmef_add_support_link_to_plugin_page' );
 
-	add_action( 'admin_notices', 'gma_wpjmef_admin_notice__error' );
-
-} else {
-
-    add_action( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'gma_wpjmef_add_support_link_to_plugin_page' );
-
-	add_filter( 'submit_job_form_fields', 'gma_wpjmef_frontend_add_salary_field');
-    add_filter( 'submit_job_form_fields', 'gma_wpjmef_frontend_add_important_info_field');
-
-    add_filter( 'job_manager_job_listing_data_fields', 'gma_wpjmef_admin_add_salary_field' );
-    add_filter( 'job_manager_job_listing_data_fields', 'gma_wpjmef_admin_add_important_info_field' );
-
-	add_action( 'single_job_listing_meta_end', 'gma_wpjmef_display_job_salary_data' );
-    add_action( 'single_job_listing_meta_end', 'gma_wpjmef_display_important_info_data' );
-
-}
+// Submit form filters
+add_filter( 'submit_job_form_fields', 'gma_wpjmef_frontend_add_salary_field');
+add_filter( 'submit_job_form_fields', 'gma_wpjmef_frontend_add_important_info_field');
+// Text fields filters
+add_filter( 'job_manager_job_listing_data_fields', 'gma_wpjmef_admin_add_salary_field' ); // #
+add_filter( 'job_manager_job_listing_data_fields', 'gma_wpjmef_admin_add_important_info_field' );
+// Single Job page filters
+add_action( 'single_job_listing_meta_end', 'gma_wpjmef_display_job_salary_data' );
+add_action( 'single_job_listing_meta_end', 'gma_wpjmef_display_important_info_data' );
 
 /**
 * Adds a direct support link under the Plugins Page once the plugin is activated

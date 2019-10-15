@@ -22,3 +22,7 @@ Documentation can be found here: https://tilcode.blog/wpjm-extra-fields-adds-ext
 - Fix: Add contributor to readme.txt
 - Fix: Update readme.md with proper markdown
 - Enhancement: Added a direct link to the support forums within the Plugins page
+
+== 1.2.0 ==
+- Tested up to WordPress 5.2.4
+- Removed WP_Job_Manager class check due to changes in the main plugin
