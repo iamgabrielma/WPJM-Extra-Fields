@@ -3,7 +3,7 @@
  * Plugin Name: WPJM Extra Fields
  * Plugin URI: https://tilcode.blog/wpjm-extra-fields-adds-extra-fields-to-wp-job-manager-job-listings
  * Description: Adds an extra Salary and Important Information fields to WP Job Manager job listings
- * Version: 1.1.0
+ * Version: 1.2.0
  * Author: Gabriel Maldonado
  * Author URI: http://tilcode.blog/
  * Text Domain: wpjm-extra-fields
