@@ -2,7 +2,7 @@
 
 Contributors: gma992
 Tags: job manager, job listing, job board, job management, job lists, job list, job, jobs, company, hiring, employment, employer, employees, candidate, freelance, internship, job listings, positions, board, application, hiring, listing, manager, recruiting, recruitment, talent
-Tested up to: 5.0
+Tested up to: 5.2.4
 License: GPLv2+
 
 == Description ==
@@ -30,3 +30,7 @@ No further setup is required, just install and activate the plugin under Plugins
 * Fix: Add contributor to readme.txt
 * Fix: Update readme.md with proper markdown
 * Enhancement: Added a direct link to the support forums within the Plugins page
+
+= 1.2.0 =
+* Tested up to WordPress 5.2.4
+* Removed WP_Job_Manager class check due to changes in the main plugin
