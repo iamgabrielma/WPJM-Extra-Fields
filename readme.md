@@ -2,7 +2,7 @@
 
 WPJM Extra Fields adds Salary and Important Information extra fields to WP Job Manager plugin. Both in the front-end for Job Submissions as well as in the back end for Job Listing management.
 
-# Intallation and Setup
+# Installation and Setup
 
 An active install of WP Job Manager in your site is required for this plugin to work, you can download it here: https://wordpress.org/plugins/wp-job-manager/
 
@@ -26,3 +26,8 @@ Documentation can be found here: https://tilcode.blog/wpjm-extra-fields-adds-ext
 == 1.2.0 ==
 - Tested up to WordPress 5.2.4
 - Removed WP_Job_Manager class check due to changes in the main plugin
+
+== 1.3.0 ==
+- Tested up to WordPress 5.3.2
+- Tested up to WP Job Manager 1.34.1
+- Fixed i18n by removing /lang path
