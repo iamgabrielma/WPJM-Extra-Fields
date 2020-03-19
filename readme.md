@@ -30,4 +30,6 @@ Documentation can be found here: https://tilcode.blog/wpjm-extra-fields-adds-ext
 == 1.3.0 ==
 - Tested up to WordPress 5.3.2
 - Tested up to WP Job Manager 1.34.1
-- Fixed i18n by removing /lang path
+- Fixed: i18n by removing /lang path
+- Enhancement: Added a class to textfields, so can be targeted via CSS
+- Enhancement: Added a new Salary column under Job Listings > Jobs filters
