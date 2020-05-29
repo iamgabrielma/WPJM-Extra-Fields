@@ -90,7 +90,7 @@ function gma_wpjmef_frontend_add_salary_field( $fields ) {
     'label'       => __( 'Salary', 'wpjm-extra-fields' ),
     'type'        => 'text',
     'required'    => false,
-    'placeholder' => 'e.g. USD$ 20.000',
+    'placeholder' => __( 'e.g. USD$ 20.000', 'wpjm-extra-fields' ),
     'description' => '',
     'priority'    => 7,
   );
@@ -108,7 +108,7 @@ function gma_wpjmef_frontend_add_important_info_field( $fields ) {
     'label'       => __( 'Important information: ', 'wpjm-extra-fields' ),
     'type'        => 'text',
     'required'    => false,
-    'placeholder' => 'e.g. Work visa required',
+    'placeholder' => __( 'e.g. Work visa required', 'wpjm-extra-fields' ),
     'description' => '',
     'priority'    => 8,
   );
@@ -125,7 +125,7 @@ function gma_wpjmef_admin_add_salary_field( $fields ) {
   $fields['_job_salary'] = array(
     'label'       => __( 'Salary', 'wpjm-extra-fields' ),
     'type'        => 'text',
-    'placeholder' => 'e.g. USD$ 20.000',
+    'placeholder' => __( 'e.g. USD$ 20.000', 'wpjm-extra-fields' ),
     'description' => ''
   );
 
@@ -141,7 +141,7 @@ function gma_wpjmef_admin_add_important_info_field( $fields ) {
   $fields['_job_important_info'] = array(
     'label'       => __( 'Important information', 'wpjm-extra-fields' ),
     'type'        => 'text',
-    'placeholder' => 'e.g. Work visa required',
+    'placeholder' => __( 'e.g. Work visa required', 'wpjm-extra-fields' ),
     'description' => ''
   );
 
@@ -160,7 +160,7 @@ function gma_wpjmef_display_job_salary_data() {
   $important_info = get_post_meta( $post->ID, '_job_important_info', true );
 
   if ( $salary ) {
-    echo '<li class="wpjmef-field-salary">' . __( 'Salary: ' ) . esc_html( $salary ) . '</li>';
+    echo '<li class="wpjmef-field-salary">' . __( 'Salary: ', 'wpjm-extra-fields' ) . esc_html( $salary ) . '</li>';
   }
 
 }
